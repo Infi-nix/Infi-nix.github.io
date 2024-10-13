@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Arinos, MG</title>
+  
+  <!-- Incluindo o Leaflet.js e seus estilos -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    #map {
+      height: 80vh;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Entregamos apenas para Arinos, MG</h1>
+  <div id="map"></div>
+
+  <footer>&copy; 2024 Mapa de Arinos | Desenvolvido Por Infinix</footer>
+
+  <!-- Incluindo o Leaflet.js -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script>
+    // Inicializa o mapa e define a posição central e o nível de zoom
+    var map = L.map('map').setView([-15.9193, -46.1035], 12);
+
+    // Mapa de ruas (normal)
+    var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+
+    // Mapa satélite da ESRI
+    var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.esri.com">Esri</a> &mdash; Source: Esri, USGS, NOAA'
+    });
+
+    // Adiciona o controle de camadas para alternar entre o mapa normal e o mapa por satélite
+    var baseMaps = {
+      "Mapa de Ruas": streets,
+      "Mapa Satélite": satellite
+    };
+
+    // Adiciona as camadas ao mapa (começando com o mapa de ruas como padrão)
+    L.control.layers(baseMaps).addTo(map);
+
+    // Exibe o mapa de ruas como camada padrão
+    streets.addTo(map);
+
+    // Adiciona um marcador na posição de Arinos, MG
+    L.marker([-15.9193, -46.1035]).addTo(map)
+      .bindPopup('<b>Arinos, MG</b>')
+      .openPopup();
+  </script>
+</body>
+</html>

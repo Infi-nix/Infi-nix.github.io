@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Adicione esta linha */
+}
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .image-slider {
+            flex: 1;
+            position: relative;
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-details h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .product-details p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .product-details .price {
+            font-size: 24px;
+            color: #b12704;
+            margin: 10px 0;
+        }
+
+.buy-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px; /* Diminua o padding para reduzir a altura do botão */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Diminua o tamanho da fonte */
+}
+
+
+        .buy-button:hover {
+            background-color: #e68a00;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+        }
+
+        .additional-info h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .specifications, .reviews {
+            margin-top: 10px;
+        }
+
+        .specifications ul, .reviews ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .specifications li, .reviews li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .title {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            position: relative; /* Necessário para posicionar a imagem dentro do texto */
+        }
+        .title img {
+            width: 12px; /* Ajuste o tamanho conforme necessário */
+            height: 12px; /* Ajuste o tamanho conforme necessário */
+            position: absolute;
+            top: -5px; /* Ajuste a posição vertical conforme necessário */
+            right: 245px; /* Ajuste a posição horizontal conforme necessário */
+        }
+        h1 {
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="image-slider">
+        <div><img src="Produtos/cedula4.jpg" alt="Img"></div>
+        <div><img src="Produtos/cedula3.jpg" alt="Img"></div>
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+    <h1>Notas Cédulas, falsas replicas tamanho real</h1>
+    <div class="product-details">
+      <p>5 notas de R$ 100 por R$ 40</p>
+        <p>Células de Dinheiro Decorativas (Sem Valor Monetário)
+        Adicione um toque de elegância e originalidade à sua coleção ou decoração com nossas exclusivas *Células de Dinheiro*. Estes itens são recriações detalhadas de células de notas de dinheiro, feitas para fins decorativos ou de colecionismo. Cada célula é produzida com precisão para capturar a essência e a arte do design de cédulas reais, mas sem valor monetário oficial. Ideal para exibir em molduras, presentear ou dar um toque único ao seu ambiente, essas células são uma forma criativa de celebrar a beleza do design financeiro, sem uso legal.</p>
+<p>Vendido(a)s 0 - Avaliações 0</p>
+<p7 class="title">LOJA: #infinix oficial <img src="img-vds/verificado.png" alt="Verificado"></p7>
+        <div class="price">R$ 39,90</div>
+        <!-- Botão de Compra -->
+        <a href="#" class="buy-button" target="_blank">Comprar Agora</a>
+
+        <!-- Informações Adicionais -->
+        <div class="additional-info">
+            <h2>Informações Adicionais</h2>
+
+            <div class="specifications">
+                <h3>Especificações Técnicas:</h3>
+                <ul>
+                    <li><strong>Estoque: </strong>2<div></li>
+                    <li><strong>Garantia:</strong> 1 hora</li>
+                </ul>
+            </div>
+
+            <div class="reviews">
+                <h3>Avaliações:</h3>
+                <ul>
+                    <li><strong>User:</strong> ★★★★☆ - ***</li>
+                    <li><strong>User:</strong> ★★★★★ - ***</li>
+                    <li><strong>User:</strong> ★★★☆☆ - ***</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.image-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+
+</body>
+</html>

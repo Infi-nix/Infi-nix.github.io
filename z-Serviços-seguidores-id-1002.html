@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços online</title>
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Adicione esta linha */
+}
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .image-slider {
+            flex: 1;
+            position: relative;
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-details h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .product-details p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .product-details .price {
+            font-size: 24px;
+            color: #b12704;
+            margin: 10px 0;
+        }
+
+.buy-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px; /* Diminua o padding para reduzir a altura do botão */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Diminua o tamanho da fonte */
+}
+
+
+        .buy-button:hover {
+            background-color: #e68a00;
+        }
+
+        .additional-info {
+            margin-top: 20px;
+        }
+
+        .additional-info h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .specifications, .reviews {
+            margin-top: 10px;
+        }
+
+        .specifications ul, .reviews ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .specifications li, .reviews li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        a {
+          color: orange;
+        }
+        p11 {
+          color: green;
+        }
+        .title {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            display: inline-block;
+            position: relative; /* Necessário para posicionar a imagem dentro do texto */
+        }
+        .title img {
+            width: 12px; /* Ajuste o tamanho conforme necessário */
+            height: 12px; /* Ajuste o tamanho conforme necessário */
+            position: absolute;
+            top: -5px; /* Ajuste a posição vertical conforme necessário */
+            right: 245px; /* Ajuste a posição horizontal conforme necessário */
+        }
+    </style>
+</head>
+<body>
+<h2>Seguidores Para redes Sociais</h2>
+<div class="container">
+    <div class="image-slider">
+<div><img src="Produtos/on9.jpg" alt="Img"></div>
+<div><img src="Produtos/on2.jpg" alt="Img"></div>
+<div><img src="Produtos/on3.jpg" alt="Img"></div>
+<div><img src="Produtos/on4.jpg" alt="Img"></div>
+<div><img src="Produtos/on5.jpg" alt="Img"></div>
+<div><img src="Produtos/on6.jpg" alt="Img"></div>
+<div><img src="Produtos/on7.jpg" alt="Img"></div>
+<div><img src="Produtos/on8.jpg" alt="Img"></div>
+<div><img src="Produtos/on1.jpg" alt="Img"></div>
+<div><img src="Produtos/on10.gif" alt="Img"></div>
+
+    </div>
+    <div class="product-details">
+        <p>Venda de seguidores Curtidas  entre outras, em várias plataformas diferentes, como tiktok, Instagram, Facebook, Twitter,... Varios preços confira <a href="tabela-loja.html">aqui!!</a><p11>Verifique o valor na tabela🤓</p11></p>
+<p>Vendido(a)s 0 - Avaliações 0</p>
+<p7 class="title">LOJA: #infinix oficial <img src="img-vds/verificado.png" alt="Verificado"></p7>
+        <div class="price">R̶$̶ 0̶,̶0̶0̶</div>
+        <!-- Botão de Compra -->
+        <a href="#" class="buy-button" target="_blank">Comprar Agora</a>
+
+        <!-- Informações Adicionais -->
+        <div class="additional-info">
+            <h2>Informações Adicionais</h2>
+
+            <div class="specifications">
+                <h3>Especificações Técnicas:</h3>
+                <ul>
+                    <li><strong>Garantia:</strong> 24h</li>
+                    <li><strong>Estoque:</strong> ilimitado</li>
+                </ul>
+            </div>
+
+            <div class="reviews">
+                <h3>Avaliações:</h3>
+                <ul>
+                    <li><strong>User:</strong> ★★★★☆ - txt</li>
+                    <li><strong>User:</strong> ★★★★★ -  txt</li>
+                    <li><strong>User:</strong> ★★★☆☆ - txt</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slick Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.image-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+</script>
+
+</body>
+</html>
